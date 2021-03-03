@@ -1,0 +1,17 @@
+{
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "rules": {
+        "linebreak-style": 0,
+        "react/destructuring-assignment": 0,
+        "jsx-a11y/click-events-have-key-events": 0,
+        "jsx-a11y/no-static-element-interactions": 0,
+        "react/forbid-prop-types": 0,
+        "jsx-a11y/label-has-associated-control": 0,
+        "jsx-a11y/no-noninteractive-element-interactions": 0,
+        "operator-linebreak": 0
+    }
+}

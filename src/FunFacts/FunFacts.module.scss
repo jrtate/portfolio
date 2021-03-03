@@ -1,0 +1,24 @@
+@import '../styles/initialTheme.scss';
+
+.funFactsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  font-size: 2.5em;
+  width: 80%;
+  text-align: center;
+}
+
+.factsList {
+  font-size: 2em;
+  text-align: center;
+  list-style-type: none;
+}
+
+.factsList li {
+  margin: 3vh 0;
+}

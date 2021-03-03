@@ -1,0 +1,46 @@
+@import '../styles/initialTheme.scss';
+
+.testimonialsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 2rem;
+  margin-bottom: 12rem;
+  width: 80%;
+  text-align: center;
+}
+
+.testimonialContent {
+  color: $content-font;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBackground {
+  position: absolute;
+  background-color: $content-background;
+  height: 25rem;
+  width: 100%;
+}
+
+.colleagueContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profileImg {
+  border-radius: 50%;
+  border: 2px solid $img-border;
+  width: 12rem;
+  height: 12rem;
+}
+
+.quote {
+  width: 45rem;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}

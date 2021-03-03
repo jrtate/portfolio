@@ -1,0 +1,49 @@
+@import '../../styles/initialTheme.scss';
+
+.gridContainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.columns {
+    display: flex;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: $toolbar-background;
+    color: $toolbar-font;
+    margin: 3rem 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.columnHeader {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid $form-border;
+    transition: all 0.3s ease-in-out 0s;
+    padding: 1rem 0;
+}
+
+.row:hover {
+    background-color: $toolbar-hover;
+    color: $toolbar-font;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.scaleImg {
+    height: 2.5rem;
+    width: 2.5rem;
+}

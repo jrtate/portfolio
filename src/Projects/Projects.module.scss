@@ -1,0 +1,35 @@
+@import '../styles/initialTheme.scss';
+
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  width: 80%;
+  text-align: center;
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 2rem;
+  font-size: 1rem;
+  border: .5rem solid $content-background;
+  cursor: pointer;
+  width: 50%;
+}
+
+.projectHeader {
+  font-size: 1.5rem;
+}
+
+.dashboardImg {
+  max-height: 100%;
+  max-width: 100%;
+}

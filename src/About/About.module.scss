@@ -1,0 +1,30 @@
+@import '../styles/initialTheme.scss';
+
+.contentBackground {
+  position: absolute;
+  background-color: $content-background;
+  height: 25rem;
+  width: 100%;
+}
+
+.aboutContent {
+  position: relative;
+  color: $content-font;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.profileImg {
+  border-radius: 50%;
+  border: 2px solid $img-border;
+  width: 17.5rem;
+  height: 17.5rem;
+}
+
+.about {
+  display: flex;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}

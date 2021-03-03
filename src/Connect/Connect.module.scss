@@ -1,0 +1,187 @@
+@import '../styles/initialTheme.scss';
+
+.connectContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+ }
+
+.header {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  width: 80%;
+  text-align: center;
+}
+
+.form {
+  width: 25rem;
+  height: 30rem;
+  background-color: $form-background;
+  padding: 0 2rem;
+  border: .4rem solid $form-border;
+  margin-bottom: 15rem;
+}
+
+.fieldContainer {
+  position: relative;
+  height: 4.2rem;
+  overflow: hidden;
+}
+
+.fieldContainer input {
+  width: 100%;
+  height: 100%;
+  color: $form-input-text;
+  padding-top: 1.2rem;
+  border: none;
+  outline: none;
+}
+
+.fieldLabel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: .1rem solid $form-text;
+}
+
+.fieldLabel::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-bottom: .15rem solid $danube;
+  transform: translate(-100%);
+  transition: transform 0.3s ease;
+}
+
+.fieldLabelText {
+  position: absolute;
+  bottom: .3rem;
+  transition: all 0.3s ease;
+  color: $form-text;
+}
+
+.fieldContainer input:focus + .fieldLabel .fieldLabelText,
+.fieldContainer input:valid + .fieldLabel .fieldLabelText {
+  transform: translateY(-150%);
+  font-size: 1rem;
+  color: $danube;
+}
+
+.fieldContainer input:focus + .fieldLabel::after,
+.fieldContainer input:valid + .fieldLabel::after {
+  transform: translateX(0);
+}
+
+
+.messageContainer {
+  margin-top: 4vh;
+  position: relative;
+  height: 14rem;
+}
+
+.messageContainer textarea {
+  position: absolute;
+  padding: 0 0 .5vw .5vw;
+  top: 0;
+  left: 0;
+  width: calc(100% - .5vw);
+  height: calc(100% - .5vw);
+  color: $form-input-text;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.messageLabel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border: 1px solid $form-text;
+}
+
+.messageLabel::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translate(-100%);
+  transition: all 0.3s ease;
+}
+
+.messageLabelText {
+  padding-left: .5vw;
+  position: absolute;
+  transition: all 0.3s ease;
+  color: $form-text;
+}
+
+.messageContainer textarea:focus + .messageLabel .messageLabelText,
+.messageContainer textarea:valid + .messageLabel .messageLabelText {
+  padding: 0;
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: $danube;
+  border-color: $danube;
+}
+
+.messageContainer textarea:focus + .messageLabel,
+.messageContainer textarea:valid + .messageLabel {
+  border: 2px solid $danube;
+}
+
+.formButtons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2vh;
+}
+
+.button {
+  text-transform: uppercase;
+  width: 8vw;
+  height: 2.5vh;
+  margin-left: .5vw;
+  font-size: 0.6em;
+  font-weight: 700;
+  background-image: linear-gradient(122deg, rgb(128, 74, 216) 0%, rgb(98, 75, 217) 100%);
+  color: rgb(255, 255, 255);
+  border-radius: 5em;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  transition: all .1s ease-in-out;
+}
+
+.button:hover {
+  box-shadow: 0 0 2px 1px  rgb(189, 158, 240);
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.footerContainer img {
+  height: 4vh;
+  width: 4vh;
+  margin: 0 1vw;
+}
+
+.footerContainer img:hover {
+  cursor: pointer;
+}

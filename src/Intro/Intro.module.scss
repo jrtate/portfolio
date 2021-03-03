@@ -1,0 +1,87 @@
+@import '../styles/initialTheme.scss';
+
+.introContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+	height: 100%;
+}
+
+.greetingsContainer {
+		border: .5rem solid $content-background;
+		margin-top: 10%;
+    font-size: 4rem;
+		font-weight: bold;
+		width: 40rem;
+		height: 8rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 15rem;
+}
+
+.hello {
+    color: $special-font;
+}
+
+.nameContainer {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	margin-top: 8rem;
+}
+
+.nameList {
+		padding-left: 0;
+    padding-bottom: 1rem;
+    list-style-type: none;
+    column-count: 2;
+		column-rule: .2rem solid $content-background;
+		text-align: center;
+}
+
+.nameList li {
+	margin-bottom: 2rem;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.scrollDown {
+	position: absolute;
+  height: 7vh;
+  width: 5vh;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+	bottom: 1vh;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	.line {
+		width: 1px;
+		height: 100%;
+		display: block;
+		background: linear-gradient(to bottom, $background 50%, $primary-font 50%);
+		background-position: 0 -7vh;
+		background-size: 100% 200%;
+		animation: scrollAnimation 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+	}
+}
+
+
+@keyframes scrollAnimation {
+	0%{
+		background-position: 0 -7vh;
+	}
+	75% {
+		background-position: 0 0;
+	}
+	100%{
+		background-position: 0 7vh;
+	}
+}
