@@ -23,7 +23,7 @@ const About = React.forwardRef((props, ref) => (
 
       {/* DESCRIPTION */}
       <p className={css.about} data-aos="fade-left">
-        I&apos;m a developer from Tampa, Florida
+        I&apos;m a front-end developer from Tampa, Florida
         who has a passion for bringing ideas to life in the web.
         I love learning about new technologies and collaborating
         with others. I look forward to challenging problems and the

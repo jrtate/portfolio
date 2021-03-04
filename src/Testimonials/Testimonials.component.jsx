@@ -24,7 +24,7 @@ const Testimonials = React.forwardRef((props, ref) => (
       <div className={css.colleagueContainer} data-aos="fade-right">
         <img className={css.profileImg} alt="profile_img" src={colleague1} />
         <strong>John Helms</strong>
-        Senior Product Manager,
+        Senior Product Manager
         <br />
         ConnectWise
       </div>

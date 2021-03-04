@@ -12,6 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: $primary-font;
   background-color: $background;
+  font-size: 2vmin; // Default content font
 }
 
 .appContainer {

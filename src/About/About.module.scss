@@ -3,7 +3,7 @@
 .contentBackground {
   position: absolute;
   background-color: $content-background;
-  height: 25rem;
+  height: 35vmin;
   width: 100%;
 }
 
@@ -13,18 +13,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  margin: 0 15vmin;
+  max-width: 100vmin;
 }
 
 .profileImg {
   border-radius: 50%;
   border: 2px solid $img-border;
-  width: 17.5rem;
-  height: 17.5rem;
+  width: 30vmin;
+  height: 30vmin;
 }
 
 .about {
-  display: flex;
-  font-size: 1.5rem;
-  margin-left: 1rem;
+  margin-left: 1vmin;
 }

@@ -3,11 +3,12 @@
 .testimonialsContainer {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .header {
-  font-size: 2rem;
-  margin-bottom: 12rem;
+  margin: 15vmin 0;
+  font-size: 3vmin;
   width: 80%;
   text-align: center;
 }
@@ -17,12 +18,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 5vmin;
+  max-width: 100vmin;
 }
 
 .contentBackground {
   position: absolute;
   background-color: $content-background;
-  height: 25rem;
+  height: 45vmin;
   width: 100%;
 }
 
@@ -35,12 +38,10 @@
 .profileImg {
   border-radius: 50%;
   border: 2px solid $img-border;
-  width: 12rem;
-  height: 12rem;
+  width: 20vmin;
+  height: 20vmin;
 }
 
 .quote {
-  width: 45rem;
-  font-size: 1.5rem;
-  margin-left: 1rem;
+  margin-left: 2vmin;
 }

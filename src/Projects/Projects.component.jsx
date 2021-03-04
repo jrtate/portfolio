@@ -17,7 +17,7 @@ const Projects = React.forwardRef((props, ref) => (
     <div className={css.projectContent} data-aos="fade-up">
       <p className={css.projectHeader}>Real Estate Management Dashboard</p>
       <img src={reDashboard} alt="real_estate_dashboard" className={css.dashboardImg} />
-      <p>
+      <p className={css.projectDescription}>
         A project where I wanted to see how web APIs were
         created and hooked up to a front end from scratch.
       </p>

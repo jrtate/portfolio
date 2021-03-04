@@ -9,41 +9,38 @@
 }
 
 .greetingsContainer {
-		border: .5rem solid $content-background;
-		margin-top: 10%;
-    font-size: 4rem;
-		font-weight: bold;
-		width: 40rem;
-		height: 8rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-top: 15rem;
+	border: .6vh solid $content-background;
+	font-size: 5vmin;
+	font-weight: bold;
+	width: 45vmin;
+	height: 8vmin;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25vh;
 }
 
 .hello {
-    color: $special-font;
+	color: $special-font;
 }
 
 .nameContainer {
-  font-size: 2rem;
+	margin-top: 4vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
-	margin-top: 8rem;
+  font-size: 3vmin;
 }
 
 .nameList {
 		padding-left: 0;
-    padding-bottom: 1rem;
     list-style-type: none;
     column-count: 2;
-		column-rule: .2rem solid $content-background;
 		text-align: center;
 }
 
 .nameList li {
-	margin-bottom: 2rem;
+	margin-bottom: 3vmin;
 }
 
 .underline {
