@@ -9,6 +9,7 @@ const About = React.forwardRef((props, ref) => (
     id={props.pageId}
     className={classNames(props.className, css.aboutContainer)}
     ref={ref}
+    data-aos="fade-in"
   >
     <div className={css.contentBackground} />
     <div className={css.aboutContent}>
@@ -18,11 +19,10 @@ const About = React.forwardRef((props, ref) => (
         className={css.profileImg}
         alt="profile_img"
         src={profileImg}
-        data-aos="fade-right"
       />
 
       {/* DESCRIPTION */}
-      <p className={css.about} data-aos="fade-left">
+      <p className={css.about}>
         I&apos;m a front-end developer from Tampa, Florida
         who has a passion for bringing ideas to life in the web.
         I love learning about new technologies and collaborating

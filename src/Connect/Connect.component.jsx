@@ -78,10 +78,12 @@ const Connect = React.forwardRef((props, ref) => {
       {/* FOOTER */}
       <div className={css.footerContainer}>
         {/* JUST IN CASE THEY'D RATHER EMAIL ME ANOHTER WAY */}
-        <img
-          src={emailImg}
-          alt="email"
-        />
+        <a href="mailto: jrtate1994@gmail.com">
+          <img
+            src={emailImg}
+            alt="email"
+          />
+        </a>
 
         {/* LINKED IN LINK */}
         <div>

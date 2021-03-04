@@ -10,9 +10,10 @@ const Testimonials = React.forwardRef((props, ref) => (
     id={props.pageId}
     className={classNames(props.className, css.testimonialsContainer)}
     ref={ref}
+    data-aos="fade-in"
   >
     {/* HEADER */}
-    <p className={css.header} data-aos="fade-down">
+    <p className={css.header}>
       I&apos;ve had the opportunity to work with some wonderful people
       and here&apos;s what one of them had to say:
     </p>
@@ -21,7 +22,7 @@ const Testimonials = React.forwardRef((props, ref) => (
       <div className={css.contentBackground} />
 
       {/* COLLEAGUE PROFILE */}
-      <div className={css.colleagueContainer} data-aos="fade-right">
+      <div className={css.colleagueContainer}>
         <img className={css.profileImg} alt="profile_img" src={colleague1} />
         <strong>John Helms</strong>
         Senior Product Manager
@@ -30,7 +31,7 @@ const Testimonials = React.forwardRef((props, ref) => (
       </div>
 
       {/* TESTIMONIAL */}
-      <p className={css.quote} data-aos="fade-left">
+      <p className={css.quote}>
         &quot;For the 3 years, I watched Justin grow as a developer. He quickly established
         that he was eager to learn whatever it took to get the job done. Within his first year
         he found his calling, Justin became one of our go-to developers for our web project.

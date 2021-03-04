@@ -36,9 +36,9 @@ const Intro = React.forwardRef((props, ref) => {
           <li>Justin</li>
           <li>Tate</li>
           <li>Tater</li>
-          <li>Tater-tot</li>
           <li>Mr. Tate</li>
-          <li>Po-tate-rs</li>
+          <li>J.T.</li>
+          <li>Tater-tot</li>
         </ul>
         <div className={css.underline}>
           Or any nickname you wish!
