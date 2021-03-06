@@ -23,11 +23,17 @@ const About = React.forwardRef((props, ref) => (
 
       {/* DESCRIPTION */}
       <p className={css.about}>
-        I&apos;m a front-end developer from Tampa, Florida
-        who has a passion for bringing ideas to life in the web.
-        I love learning about new technologies and collaborating
-        with others. I look forward to challenging problems and the
-        satisfaction obtained from finding a good solution.
+        I&apos;m a front-end developer from Tampa, Florida who has a passion for
+        bringing ideas to life in the web. I’ve had the opportunity to work at a
+        multibillion-dollar company that empowered technology service providers through
+        the innovative tools they provided. Some of my experience stems from working
+        on remote monitoring and management software, deployed to over 6 million
+        computers across the globe. This presented a unique set of challenges which
+        has only encouraged my growth as a web developer. I consider myself naturally
+        motivated, congenial in nature, and am always looking for opportunities to
+        improve myself. I can’t wait to branch out and begin working on new projects
+        as well as the chance to work with other amazing people to turn ideas into
+        a reality!
       </p>
     </div>
 

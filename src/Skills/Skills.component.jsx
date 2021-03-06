@@ -14,7 +14,7 @@ const Skills = React.forwardRef((props, ref) => (
   >
     {/* HEADER */}
     <p className={css.header}>
-      Some of my skills, as well as my confidence levels with each:
+      Some of my skills include:
     </p>
 
     {/* SKILLS GRID */}

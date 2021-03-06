@@ -1,0 +1,65 @@
+@import '../../styles/initialTheme.scss';
+
+.slideShowContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+  width: 80%;
+}
+
+.slideContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5vmin 2vmin;
+}
+
+.slideHeader {
+  font-size: 2.5vmin;
+  font-weight: bold;
+  margin-bottom: 1vmin;
+}
+
+.slideImg {
+  max-height: 700px;
+  border: .5vmin solid $primary-font;
+}
+
+.slideDescription {
+  width: 60%;
+  text-align: center;
+}
+
+.slideDescription a {
+  text-decoration: none;
+  color: $special-font;
+}
+
+.driveLink {
+  text-decoration: underline;
+  cursor: pointer;
+  color: $special-font;
+}
+
+.navigatorContainer {
+  position: absolute;
+  bottom: -8vmin;
+  display: flex;
+}
+
+.navigatorButton {
+  cursor: pointer;
+  margin-top: 1vh;
+  border-radius: 50%;
+  height: 2vmin;
+  width: 2vmin;
+  margin: 1vmin .2vmin;
+  border: .2vmin solid $primary-font;
+}
+
+.selectedNavigatorButton {
+  background-color: $primary-font;
+}

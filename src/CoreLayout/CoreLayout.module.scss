@@ -12,7 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: $primary-font;
   background-color: $background;
-  font-size: 2vmin; // Default content font
+  font-size: 1.25rem; // Default content font
 }
 
 .appContainer {
@@ -21,7 +21,7 @@ body {
 }
 
 .bodyContent {
-  height: 100% ;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;

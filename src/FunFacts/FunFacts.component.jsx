@@ -14,16 +14,29 @@ const FunFacts = React.forwardRef((props, ref) => (
       Get a feel for who I am:
     </p>
 
+    {/* FUN FACT LIST */}
     <ul className={css.factsList}>
-      <li data-aos="fade-right">I can sort of play the piano</li>
-      <li data-aos="fade-left">
-        I enjoy looking at cutting edge web pages
-        <br />
-        to figure out how it works
+      <li data-aos="fade-right">
+        I enjoy looking at cutting edge web pages to figure out how they work
       </li>
-      <li data-aos="fade-right">I&apos;ve almost learned how to juggle</li>
-      <li data-aos="fade-left">My favorite comedian is Bill Burr.</li>
-      <li data-aos="fade-right">I&apos;m learning how to make latte art.</li>
+      <li data-aos="fade-left">
+        I can play the piano and guitar
+      </li>
+      <li data-aos="fade-right">
+        I love coffee and am learning how to make latte art
+      </li>
+      <li data-aos="fade-left">
+        I love the outdoors and exploring nature
+      </li>
+      <li data-aos="fade-right">
+        My favorite game is World of Warcraft
+      </li>
+      <li data-aos="fade-left">
+        I know how to produce electronic music
+      </li>
+      <li data-aos="fade-right">
+        I love checking out innovative new technology and gadgets
+      </li>
     </ul>
 
   </div>
