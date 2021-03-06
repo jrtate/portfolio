@@ -5,6 +5,7 @@
   background-color: $content-background;
   height: 35vmin;
   width: 100%;
+  z-index: -1;
 }
 
 .aboutContent {
@@ -20,10 +21,11 @@
 .profileImg {
   border-radius: 50%;
   border: 2px solid $img-border;
-  width: 30vmin;
-  height: 30vmin;
+  width: 20vmin;
+  height: 20vmin;
 }
 
 .about {
+  display: flex;
   margin-left: 1vmin;
 }

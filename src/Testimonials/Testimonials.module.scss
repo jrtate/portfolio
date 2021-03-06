@@ -16,6 +16,7 @@
 .testimonialContent {
   color: $content-font;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 5vmin;
@@ -30,19 +31,20 @@
   z-index: -1;
 }
 
-.colleagueContainer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
 .profileImg {
   border-radius: 50%;
   border: 2px solid $img-border;
-  width: 20vmin;
-  height: 20vmin;
+  width: 15vmin;
+  height: 15vmin;
 }
 
 .quote {
   margin-left: 2vmin;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 300;
 }
