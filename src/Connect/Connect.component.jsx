@@ -77,13 +77,6 @@ const Connect = React.forwardRef((props, ref) => {
 
       {/* FOOTER */}
       <div className={css.footerContainer}>
-        {/* JUST IN CASE THEY'D RATHER EMAIL ME ANOHTER WAY */}
-        <a href="mailto: jrtate1994@gmail.com">
-          <img
-            src={emailImg}
-            alt="email"
-          />
-        </a>
 
         {/* LINKED IN LINK */}
         <div>
@@ -103,6 +96,15 @@ const Connect = React.forwardRef((props, ref) => {
               window.open('https://github.com/jrtate');
             }}
           />
+
+          {/* JUST IN CASE THEY'D RATHER EMAIL ME ANOHTER WAY */}
+          <a href="mailto: jrtate1994@gmail.com">
+            <img
+              src={emailImg}
+              alt="email"
+            />
+          </a>
+
         </div>
 
         <p>Forged by me, with love</p>
