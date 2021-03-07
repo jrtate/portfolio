@@ -1,5 +1,45 @@
 @import '../styles/initialTheme.scss';
 
+@media screen and (min-width: 1216px) {
+  .profileImg {
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    top: -7rem;
+  }
+  .quote {
+    margin: 8rem 2rem 1rem 2rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1215px) {
+  .profileImg {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    top: -6rem;
+  }
+  .quote {
+    margin: 7rem 2rem 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonialsContainer {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .profileImg {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    top: -5rem;
+  }
+  .quote {
+    margin: 6rem 2rem 1rem 2rem;
+  }
+}
+
 .testimonialsContainer {
   display: flex;
   flex-direction: column;
@@ -7,9 +47,9 @@
 }
 
 .header {
-  margin: 15vmin 0;
-  font-size: 3vmin;
-  width: 80%;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
@@ -19,27 +59,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 5vmin;
-  max-width: 100vmin;
-}
-
-.contentBackground {
-  position: absolute;
+  position: relative;
   background-color: $content-background;
-  height: 45vmin;
-  width: 100%;
-  z-index: -1;
+  width: 100vw;
+  margin-top: 5rem;
 }
 
 .profileImg {
   border-radius: 50%;
-  border: 2px solid $img-border;
-  width: 15vmin;
-  height: 15vmin;
-}
-
-.quote {
-  margin-left: 2vmin;
+  border: 4px solid $img-border;
 }
 
 .titleContainer {
@@ -47,4 +75,9 @@
   flex-direction: column;
   text-align: center;
   font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.quote {
+  max-width: 60rem;
 }

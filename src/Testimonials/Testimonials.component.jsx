@@ -19,10 +19,8 @@ const Testimonials = React.forwardRef((props, ref) => (
     </p>
 
     <div className={css.testimonialContent}>
-      <div className={css.contentBackground} />
 
       {/* COLLEAGUE PROFILE */}
-
       <img className={css.profileImg} alt="profile_img" src={colleague1} />
 
       {/* TESTIMONIAL */}
@@ -37,6 +35,7 @@ const Testimonials = React.forwardRef((props, ref) => (
         to any company he joins.&quot;
       </p>
 
+      {/* COLLEAGUE TITLE */}
       <div className={css.titleContainer}>
         <strong>John Helms</strong>
         Senior Product Manager

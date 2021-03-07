@@ -1,5 +1,23 @@
 @import '../styles/initialTheme.scss';
 
+@media screen and (min-width: 1216px) {
+  .attribution {
+    font-size: .75rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1215px) {
+  .attribution {
+    font-size: .75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .attribution {
+    font-size: .65rem;
+  }
+}
+
 .skillsContainer {
   display: flex;
   flex-direction: column;
@@ -8,8 +26,9 @@
 }
 
 .header {
-  font-size: 3vmin;
-  width: 80%;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
@@ -23,7 +42,6 @@
 }
 
 .attribution {
-  font-size: 1.5vmin;
   margin-top: 2vmin;
 }
 

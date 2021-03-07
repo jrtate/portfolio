@@ -12,7 +12,12 @@ const Projects = React.forwardRef((props, ref) => (
     ref={ref}
   >
     {/* HEADER */}
-    <div className={css.header} data-aos="fade-down">Here&apos;s just a couple projects I did for fun:</div>
+    <div
+      className={css.header}
+      data-aos="fade-down"
+    >
+      Here&apos;s a couple projects I did for fun:
+    </div>
 
     {/* PROJECTS */}
     <SlideShow slides={slideData} />

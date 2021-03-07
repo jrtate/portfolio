@@ -40,9 +40,7 @@ const Intro = React.forwardRef((props, ref) => {
           <li>J.T.</li>
           <li>Tater-tot</li>
         </ul>
-        <div className={css.underline}>
-          Or any nickname you wish!
-        </div>
+        or any nickname you want!
       </div>
 
       {/* SCROLL ANIMATION */}

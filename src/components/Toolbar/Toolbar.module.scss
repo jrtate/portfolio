@@ -1,5 +1,14 @@
 @import '../../styles/initialTheme.scss';
 
+@media screen and (min-width: 1216px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 1215px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
 .toolbarContainer {
   position: fixed;
   z-index: 1;

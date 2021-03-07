@@ -12,6 +12,20 @@ const SlideShow = (props) => {
 
   return (
     <div className={css.slideShowContainer} data-aos="fade-up">
+      {/* Slide Navigator */}
+      <div className={css.navigatorContainer}>
+        {props.slides.map((slide) => (
+          <div
+            key={slide.id}
+            className={cx(
+              css.navigatorButton,
+              { [css.selectedNavigatorButton]: slide.id === selectedSlideId },
+            )}
+            onClick={() => { handleNavigationButtonClick(slide.id); }}
+          />
+        ))}
+      </div>
+
       {props.slides.map((slide) => (
         selectedSlideId === slide.id && (
           <div
@@ -31,9 +45,9 @@ const SlideShow = (props) => {
             />
 
             {/* SLIDE DESCRIPTION */}
-            <p className={css.slideDescription}>
+            <div className={css.slideDescription}>
               {slide.slideDescription}
-            </p>
+            </div>
 
             {/* GOOGLE DRIVE LINK */}
             {slide.projectLink !== '' && (
@@ -41,26 +55,13 @@ const SlideShow = (props) => {
                 className={css.driveLink}
                 onClick={() => { window.open(slide.projectLink); }}
               >
-                Check out some of this project&apos;s files here on Google Drive!
+                Check out this project&apos;s files here
               </div>
             )}
 
           </div>
         )
       ))}
-
-      {/* Slide Navigator */}
-      <div className={css.navigatorContainer}>
-        {props.slides.map((slide) => (
-          <div
-            className={cx(
-              css.navigatorButton,
-              { [css.selectedNavigatorButton]: slide.id === selectedSlideId },
-            )}
-            onClick={() => { handleNavigationButtonClick(slide.id); }}
-          />
-        ))}
-      </div>
     </div>
   );
 };
@@ -69,7 +70,7 @@ const slideShape = PropTypes.shape({
   id: PropTypes.number.isRequired,
   slideHeader: PropTypes.string.isRequired,
   imgSrc: PropTypes.string.isRequired,
-  slideDescription: PropTypes.string.isRequired,
+  slideDescription: PropTypes.any.isRequired,
 });
 
 SlideShow.propTypes = {

@@ -10,7 +10,7 @@ export const slideData = [
     imgSrc: reDashboard,
     projectLink: 'https://drive.google.com/drive/folders/1iRwDndR9BYR_-bVtEYO69jhZGI9flMhi?usp=sharing',
     slideDescription:
-  <p>
+  <div>
     The goal of this project was so I could learn how a new web API could be
     created and hooked up to a React application from start to finish. The
     inspiration for this project was taken from a video that I found&nbsp;
@@ -22,7 +22,7 @@ export const slideData = [
     schema that was inferred from the data that I noticed in the mockup. I leveraged
     IIS Express and one of Visual Studio&apos;s web API templates to set up the API
     layer that was used to hydrate my front-end screen.
-  </p>,
+  </div>,
   },
   {
     id: 2,

@@ -1,35 +1,86 @@
 @import '../../styles/initialTheme.scss';
 
+@media screen and (min-width: 1216px) {
+  .slideShowContainer {
+    height: 890px;
+  }
+  .slideHeader {
+    font-size: 1.2rem;
+  }
+  .slideImg {
+    max-height: 600px;
+    max-width: 1200px;
+  }
+  .slideDescription {
+    max-width: 1000px;
+  }
+  .navigatorContainer {
+    bottom: -4rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1215px) {
+  .slideShowContainer {
+    height: 780px;
+  }
+  .slideHeader {
+    font-size: 1.2rem;
+  }
+  .slideImg {
+    max-height: 500px;
+    max-width: 700px;
+  }
+  .slideDescription {
+    max-width: 700px;
+  }
+  .navigatorContainer {
+    bottom: -4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slideShowContainer {
+    height: 510px;
+  }
+  .slideHeader {
+    font-size: 1.2rem;
+  }
+  .slideImg {
+    max-height: 350px;
+    max-width: 350px;
+  }
+  .slideDescription {
+    max-width: 350px;
+    font-size: .75rem;
+    font-weight: 600;
+  }
+}
+
+
 .slideShowContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 75%;
-  width: 80%;
 }
 
 .slideContent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: .5vmin 2vmin;
 }
 
 .slideHeader {
-  font-size: 2.5vmin;
+  text-align: center;
   font-weight: bold;
-  margin-bottom: 1vmin;
+  margin: 3rem 0;
 }
 
 .slideImg {
-  max-height: 700px;
-  border: .5vmin solid $primary-font;
+  border: 2px solid $primary-font;
 }
 
 .slideDescription {
-  width: 60%;
+  margin: 1rem 0;
   text-align: center;
 }
 
@@ -39,6 +90,7 @@
 }
 
 .driveLink {
+  text-align: center;
   text-decoration: underline;
   cursor: pointer;
   color: $special-font;
@@ -46,18 +98,17 @@
 
 .navigatorContainer {
   position: absolute;
-  bottom: -8vmin;
+  top: -1rem;
   display: flex;
 }
 
 .navigatorButton {
   cursor: pointer;
-  margin-top: 1vh;
   border-radius: 50%;
-  height: 2vmin;
-  width: 2vmin;
-  margin: 1vmin .2vmin;
-  border: .2vmin solid $primary-font;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 .2rem;
+  border: 1px solid $primary-font;
 }
 
 .selectedNavigatorButton {

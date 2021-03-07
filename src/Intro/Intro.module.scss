@@ -1,23 +1,37 @@
 @import '../styles/initialTheme.scss';
 
+@media screen and (min-width: 1216px) {
+	.greetingsContainer {
+		font-size: 4rem;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1215px) {
+	.greetingsContainer {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.greetingsContainer {
+		font-size: 2.2rem;
+	}
+}
+
 .introContainer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   position: relative;
 	height: 100%;
 }
 
 .greetingsContainer {
-	border: .6vh solid $content-background;
-	font-size: 5vmin;
+	border: 5px solid $content-background;
+	padding: .5rem;
 	font-weight: bold;
-	width: 45vmin;
-	height: 8vmin;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 25vh;
 }
 
 .hello {
@@ -25,11 +39,11 @@
 }
 
 .nameContainer {
-	margin-top: 4vmin;
+	margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 3vmin;
+	text-align: center;
 }
 
 .nameList {
@@ -40,7 +54,7 @@
 }
 
 .nameList li {
-	margin-bottom: 3vmin;
+	margin-bottom: 1.5rem;
 }
 
 .underline {
@@ -49,12 +63,12 @@
 
 .scrollDown {
 	position: absolute;
-  height: 7vh;
-  width: 5vh;
+  height: 5rem;
+  width: 2rem;
   display: flex;
   justify-content: center;
   cursor: pointer;
-	bottom: 1vh;
+	bottom: 0;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
@@ -64,7 +78,7 @@
 		height: 100%;
 		display: block;
 		background: linear-gradient(to bottom, $background 50%, $primary-font 50%);
-		background-position: 0 -7vh;
+		background-position: 0 -5rem;
 		background-size: 100% 200%;
 		animation: scrollAnimation 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
 	}
@@ -73,12 +87,12 @@
 
 @keyframes scrollAnimation {
 	0%{
-		background-position: 0 -7vh;
+		background-position: 0 -5rem;
 	}
 	75% {
 		background-position: 0 0;
 	}
 	100%{
-		background-position: 0 7vh;
+		background-position: 0 5rem;
 	}
 }

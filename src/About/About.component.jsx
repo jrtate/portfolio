@@ -11,7 +11,6 @@ const About = React.forwardRef((props, ref) => (
     ref={ref}
     data-aos="fade-in"
   >
-    <div className={css.contentBackground} />
     <div className={css.aboutContent}>
 
       {/* PROFILE PICTURE */}

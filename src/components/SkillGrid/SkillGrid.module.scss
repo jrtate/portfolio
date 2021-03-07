@@ -1,23 +1,40 @@
 @import '../../styles/initialTheme.scss';
 
+@media screen and (min-width: 1216px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 1215px) {
+}
+
+@media screen and (max-width: 768px) {
+    .columnHeader {
+        font-size: .75rem;
+    }
+    .row {
+        font-size: .75rem;
+    }
+}
+
 .gridContainer {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 95%;
+    max-width: 1600px;
 }
 
 .columns {
     display: flex;
     width: 100%;
-    padding: 1vmin 0;
+    padding: 1rem 0;
     background-color: $toolbar-background;
     color: $toolbar-font;
-    margin: 1vmin 0;
+    margin: .5rem 0;
     border-radius: 5px;
     text-align: center;
 }
 
 .columnHeader {
+    overflow-wrap: break-word;
     text-transform: uppercase;
 }
 
@@ -27,7 +44,7 @@
     align-items: center;
     border-bottom: 1px solid $form-border;
     transition: all 0.3s ease-in-out 0s;
-    padding: 1vmin 0;
+    padding: 1rem 0;
 }
 
 .row:hover {

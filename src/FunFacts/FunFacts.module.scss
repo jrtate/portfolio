@@ -1,5 +1,14 @@
 @import '../styles/initialTheme.scss';
 
+@media screen and (min-width: 1216px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 1215px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
 .funFactsContainer {
   display: flex;
   flex-direction: column;
@@ -8,13 +17,13 @@
 }
 
 .header {
-  margin-top: 15vmin;
-  font-size: 3vmin;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
 .factsList {
-  width: 30%;
   text-align: center;
   list-style-type: none;
   padding: 0;
