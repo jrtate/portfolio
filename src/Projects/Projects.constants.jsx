@@ -29,7 +29,7 @@ export const slideData = [
     slideHeader: 'My Portfolio',
     imgSrc: portfolio,
     projectLink: 'https://drive.google.com/drive/folders/1Xhm0RJvrvVjRRKvQ4PG7VUzfb4qS0lrG?usp=sharing',
-    slideDescription: 'A purely front-end project intended to store any projects or work experiences that I can as I progress through my career. It is my personal website that you are on right now!',
+    slideDescription: 'A purely front-end driven project, intended to store any projects or work experiences that I can as I progress through my career. It is my personal website that you are on right now!',
   },
   {
     id: 3,

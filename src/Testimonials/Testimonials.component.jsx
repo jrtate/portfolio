@@ -25,14 +25,15 @@ const Testimonials = React.forwardRef((props, ref) => (
 
       {/* TESTIMONIAL */}
       <p className={css.quote}>
-        &quot;For the 3 years, I watched Justin grow as a developer. He quickly established
-        that he was eager to learn whatever it took to get the job done. Within his first year
-        he found his calling, Justin became one of our go-to developers for our web project.
-        He was an invaluable resource to the entire team. Several developers began asking for
-        his advice on their projects, and he was always willing to help. His attitude and work
-        ethics made working with him an absolute pleasure. I would love to have the opportunity
-        to work with him again in the future.  Either way, I know that he will an asset
-        to any company he joins.&quot;
+        &quot;For the 3 years, I watched Justin grow as a developer. He quickly
+        established that he was eager to learn whatever it took to get the job done.
+        Within his first year he found his calling, Justin became one of our go-to
+        developers for our web project. He was an invaluable resource to the entire team.
+        Several developers began asking for his advice on their projects, and he was always
+        willing to help. His attitude and work ethics made working with him an absolute pleasure.
+        I would love to have the opportunity to work with him again in the future. Either way,
+        I know that he will an asset to any company he joins.
+        &quot;
       </p>
 
       {/* COLLEAGUE TITLE */}
