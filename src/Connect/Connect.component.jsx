@@ -25,12 +25,12 @@ const Connect = React.forwardRef((props, ref) => {
       ref={ref}
     >
       {/* HEADER */}
-      <p className={css.header} data-aos="fade-down">
+      <p className={css.header} data-aos="fade-in">
         Let&apos;s chat!
       </p>
 
       {/* EMAIL FORM */}
-      <form className={css.form} onSubmit={handleSendEmail} data-aos="fade-up">
+      <form className={css.form} onSubmit={handleSendEmail} data-aos="fade-in">
 
         {/* EMAIL FIELD */}
         <div className={css.fieldContainer}>

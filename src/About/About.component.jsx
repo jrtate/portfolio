@@ -30,9 +30,7 @@ const About = React.forwardRef((props, ref) => (
         computers across the globe. This presented a unique set of challenges which
         has only encouraged my growth as a web developer. I consider myself naturally
         motivated, congenial in nature, and am always looking for opportunities to
-        improve myself. I can’t wait to branch out and begin working on new projects
-        as well as the chance to work with other amazing people to turn ideas into
-        a reality!
+        improve myself.
       </p>
     </div>
 

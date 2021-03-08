@@ -14,7 +14,7 @@ const Projects = React.forwardRef((props, ref) => (
     {/* HEADER */}
     <div
       className={css.header}
-      data-aos="fade-down"
+      data-aos="fade-in"
     >
       Here&apos;s a couple projects I did for fun:
     </div>

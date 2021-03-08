@@ -5,7 +5,7 @@ import css from './Intro.module.scss';
 
 const Intro = React.forwardRef((props, ref) => {
   const handleScrollClick = () => {
-    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('about').scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
   };
 
   return (
@@ -15,14 +15,14 @@ const Intro = React.forwardRef((props, ref) => {
       ref={ref}
     >
       {/* GREETINGS */}
-      <div className={css.greetingsContainer} data-aos="fade-down">
+      <div className={css.greetingsContainer} data-aos="fade-in">
         Well...
         <span className={css.hello}>&nbsp;hello&nbsp;</span>
         there!
       </div>
 
       {/* NAME CONTAINER */}
-      <div className={css.nameContainer} data-aos="fade-up" data-aos-delay="1500">
+      <div className={css.nameContainer} data-aos="fade-in" data-aos-delay="1500">
 
         {/* NAME */}
         <p>

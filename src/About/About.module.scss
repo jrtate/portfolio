@@ -41,6 +41,11 @@
   }
 }
 
+.aboutContainer {
+  height: unset;
+  margin-bottom: 10rem;
+}
+
 .aboutContent {
   position: relative;
   color: $content-font;

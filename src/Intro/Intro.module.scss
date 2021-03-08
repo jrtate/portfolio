@@ -23,6 +23,7 @@
   flex-direction: column;
   position: relative;
 	height: 100%;
+	margin-bottom: 10rem;
 }
 
 .greetingsContainer {
@@ -63,7 +64,7 @@
 
 .scrollDown {
 	position: absolute;
-  height: 5rem;
+  height: 4rem;
   width: 2rem;
   display: flex;
   justify-content: center;
@@ -78,7 +79,7 @@
 		height: 100%;
 		display: block;
 		background: linear-gradient(to bottom, $background 50%, $primary-font 50%);
-		background-position: 0 -5rem;
+		background-position: 0 -4rem;
 		background-size: 100% 200%;
 		animation: scrollAnimation 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
 	}
@@ -87,12 +88,12 @@
 
 @keyframes scrollAnimation {
 	0%{
-		background-position: 0 -5rem;
+		background-position: 0 -4rem;
 	}
 	75% {
 		background-position: 0 0;
 	}
 	100%{
-		background-position: 0 5rem;
+		background-position: 0 4rem;
 	}
 }

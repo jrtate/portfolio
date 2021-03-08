@@ -7,7 +7,7 @@ const Toolbar = (props) => {
   const [showNavButton, setShowNavButton] = useState(true);
 
   const handleNavItemClick = (navItem) => {
-    document.getElementById(navItem.pageId).scrollIntoView({ behavior: 'smooth', block: 'end' });
+    document.getElementById(navItem.pageId).scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
   };
 
   return (
@@ -32,7 +32,7 @@ const Toolbar = (props) => {
       {/* NAV MENU */}
       {showNavMenu && (
         <div
-          data-aos="fade-right"
+          data-aos="fade-in"
           data-aos-easing="ease"
           data-aos-duration="400"
           className={css.menuContainer}
