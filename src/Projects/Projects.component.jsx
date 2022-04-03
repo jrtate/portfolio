@@ -8,7 +8,7 @@ import slideData from './Projects.constants';
 const Projects = React.forwardRef((props, ref) => (
   <div
     id={props.pageId}
-    className={classNames(props.className, css.projectContainer)}
+    className={classNames(props.className, css.projectContainer, css.funFactsContainer)}
     ref={ref}
   >
     {/* HEADER */}

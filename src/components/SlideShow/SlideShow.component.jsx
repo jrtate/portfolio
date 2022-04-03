@@ -49,16 +49,6 @@ const SlideShow = (props) => {
               {slide.slideDescription}
             </div>
 
-            {/* GOOGLE DRIVE LINK */}
-            {slide.projectLink !== '' && (
-              <div
-                className={css.driveLink}
-                onClick={() => { window.open(slide.projectLink); }}
-              >
-                Check out this project&apos;s files here
-              </div>
-            )}
-
           </div>
         )
       ))}

@@ -8,7 +8,6 @@ export const slideData = [
     id: 1,
     slideHeader: 'Real Estate Management Dashboard',
     imgSrc: reDashboard,
-    projectLink: 'https://drive.google.com/drive/folders/1iRwDndR9BYR_-bVtEYO69jhZGI9flMhi?usp=sharing',
     slideDescription:
   <div>
     The goal of this project was so I could learn how a new web API could be
@@ -28,14 +27,12 @@ export const slideData = [
     id: 2,
     slideHeader: 'My Portfolio',
     imgSrc: portfolio,
-    projectLink: 'https://drive.google.com/drive/folders/1Xhm0RJvrvVjRRKvQ4PG7VUzfb4qS0lrG?usp=sharing',
     slideDescription: 'A purely front-end driven project, intended to store any projects or work experiences that I can as I progress through my career. It is my personal website that you are on right now!',
   },
   {
     id: 3,
     slideHeader: 'Coming Soon',
     imgSrc: todo,
-    projectLink: '',
     slideDescription: 'More coming soon!',
   },
 ];
